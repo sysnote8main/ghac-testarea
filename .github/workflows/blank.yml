@@ -13,6 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Run a one-line script
+        continue-on-error: true
         run: exit 1
 
       # Runs a set of commands using the runners shell
