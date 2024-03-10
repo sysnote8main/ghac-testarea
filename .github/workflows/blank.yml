@@ -19,7 +19,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
-        if: $steps.check.outcome == 'failure'
+        if: ${{ steps.check.outcome }} == 'failure'
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
